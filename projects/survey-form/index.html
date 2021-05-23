@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Covid Screening Checklist</h1>
+    <p id="description">
+      This screening checklist is required tp be filled out by all employees and patrons entering this establishment.
+      This information will be discarded and not be collected or shared to any persons, organization, or body of
+      government.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Full name" required />
+      </fieldset>
+
+      <fieldset>
+        <label id="email-label" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Your email" required />
+      </fieldset>
+
+      <fieldset>
+        <label id="number-label" for="number">Temperature</label>
+        <input id="number" name="number" type="number" min="0" max="150" placeholder="98.6" required />
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">Vaccinated</label>
+        <select id="dropdown">
+          <option value="none">Not vaccinated</option>
+          <option value="pfizer">Pfizer</option>
+          <option value="moderna">Moderna</option>
+          <option value="sinovac">Sinovac</option>
+          <option value="astrazeneca">AstraZeneca</option>
+          <option value="novavax">Novavax</option>
+          <option value="johnson-and-johnson">Johnson & Johnson</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label>Are you experiencing any of the following?</label>
+        <ul>
+          <li>
+            <label>
+              <input name="covid-contact" value="fever-chills" type="checkbox" />
+              fever/chills
+            </label>
+          </li>
+          <li>
+            <label>
+              <input name="covid-contact" value="headache" type="checkbox" />
+              headache
+            </label>
+          </li>
+          <li>
+            <label>
+              <input name="covid-contact" value="body-pain" type="checkbox" />
+              body pain
+            </label>
+          </li>
+          <li>
+            <label>
+              <input name="covid-contact" value="runny-nose" type="checkbox" />
+              runny nose
+            </label>
+          </li>
+          <li>
+            <label>
+              <input name="covid-contact" value="digestive-problems" type="checkbox" />
+              digestive problems
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <label>Have you worked together or stayed in the same close environment of a confirmed COVID-19 case?</label>
+        <label class="radio-group">
+          <input name="proximity" type="radio" value="yes" />
+          yes
+        </label>
+        <label class="radio-group">
+          <input name="proximity" type="radio" value="no" />
+          no
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label
+          >Have you had any contact with anyone with fever, cough, colds, and sore throat in the past 2 weeks?
+        </label>
+        <label class="radio-group">
+          <input name="covid-contact" type="radio" value="yes" />
+          yes
+        </label>
+        <label class="radio-group">
+          <input name="covid-contact" type="radio" value="no" />
+          no
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="">Have you travelled outside of the country in the last 14 days?</label>
+        <label class="radio-group">
+          <input name="travel" type="radio" value="yes" />
+          yes
+        </label>
+        <label class="radio-group">
+          <input name="travel" type="radio" value="no" />
+          no
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="comments">Additional Comments</label>
+        <textarea name="comments" id="comments" rows="10"></textarea>
+      </fieldset>
+
+      <fieldset class="button-group">
+        <input id="submit" type="submit" />
+      </fieldset>
+    </form>
+
+    <script
+      type="text/javascript"
+      async
+      defer
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+:root {
+  --color: rgba(65, 65, 65, 1);
+  --input-border: rgba(65, 65, 65, 0.2);
+}
+
+* + * {
+  margin-top: 1.5rem;
+}
+
+body {
+  max-width: 50ch;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p,
+input {
+  font-size: 0.875rem;
+  color: var(--color);
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+fieldset > * {
+  margin-top: 0;
+}
+
+fieldset > label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--color);
+  font-size: 1.1rem;
+}
+
+fieldset > .radio-group {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+fieldset > input[type='text'],
+fieldset > input[type='email'],
+fieldset > select {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--input-border);
+}
+
+fieldset > input[type='number'] {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--input-border);
+}
+
+fieldset > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+fieldset > ul > li {
+  margin-top: 0.5rem;
+}
+
+fieldset > textarea {
+  width: -webkit-fill-available;
+  border: 1px solid var(--input-border);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+input[type='submit'] {
+  background-color: rgba(24, 90, 219, 0.1);
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: rgba(24, 90, 219, 1);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+}
