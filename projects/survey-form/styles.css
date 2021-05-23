@@ -72,6 +72,8 @@ fieldset > ul > li {
 
 fieldset > textarea {
   width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
   border: 1px solid var(--input-border);
   border-radius: 0.25rem;
   padding: 0.5rem 0.5rem;
